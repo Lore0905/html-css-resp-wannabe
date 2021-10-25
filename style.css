@@ -23,27 +23,12 @@
   text-align: center;
 }
 
-/* SOLUZIONE MEDIA QUERY  MOBILE*/
-@media screen and (max-width: 420px){
-  .row{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 420px){
-  #lezioni .row>.left,
-  #lezioni .row>.right{
-    width: 100%;
-    float: none;
-    margin-top: 50px;
-  }
-} 
 /* SOLUZIONE MEDIA QUERY  IPAD*/
 @media screen and (max-width: 768px){
   .row{
     width: 100%;
   }
-}
-@media screen and (max-width: 768px){
+
   #lezioni .row>.left,
   #lezioni .row>.right{
     width: 100%;
@@ -51,6 +36,7 @@
     margin-top: 50px;
   }
 } 
+
 
 
 /* BLOCCO STEPS */
@@ -82,7 +68,16 @@
   border-radius: 50%;
   padding: 30px
 }
-
+/* SOLUZIONE MEDIA QUERY IPAD*/
+@media screen and (max-width: 768px){
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
 /* SOLUZIONE MEDIA QUERY MOBILE */
 @media screen and (max-width: 420px){
   #steps .row>.left,
@@ -93,16 +88,7 @@
     margin-top: 50px;
   }
 } 
-/* SOLUZIONE MEDIA QUERY IPAD*/
-@media screen and (max-width: 768px){
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    float: none;
-    width: 100%;
-    margin-top: 50px;
-}
-}
+
 
 /* COMMON */
 .row::after {
@@ -123,23 +109,26 @@ img {
   clear: both;
 }
 /* SOLUZIONE */
+/* SOLUZIONE MEDIAQUERY IPAD */
+@media screen and (max-width: 768px){
+  body{ 
+    font-size: 17px;
+  } 
+
+  *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+} 
 @media screen and (max-width: 420px){
   .container{ 
     width: 100%;
 
   } 
-}  
-/* SOLUZIONE MEDIAQUERY MOBILE */
-@media screen and (max-width: 420px){
+
   body{ 
-    font-size: 10px;
-    width: 100vw;
+    font-size: 20px;
   } 
 }  
 
-/* SOLUZIONE MEDIAQUERY IPAD */
-@media screen and (max-width: 768px){
-  body{ 
-    font-size: 30px;
-  } 
-}  
